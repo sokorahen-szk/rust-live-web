@@ -1,0 +1,21 @@
+.SelectVideoTab {
+  list-style-type: none;
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+.SelectVideoTab li {
+  font-size: 20px;
+  padding: 5px 10px;
+}
+.SelectVideoTab li:hover {
+  font-weight: bold;
+}
+
+.SelectVideoTab li:not(SelectVideoTab-Selected) {
+  padding-bottom: 5px;
+}
+.SelectVideoTab-Selected {
+  border-bottom: #ddd solid 5px;
+}
