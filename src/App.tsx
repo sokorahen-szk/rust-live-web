@@ -1,4 +1,4 @@
-import React, { createContext } from "react";
+import { createContext, useState } from "react";
 import Header from "./components/Header";
 import SelectVideoTab from "./components/SelectVideoTab";
 
@@ -13,11 +13,12 @@ const header: IHeader = {
 export const HeaderContext = createContext(header);
 
 const App = () => {
+  const [tab, setTab] = useState("live");
   return (
     <div className="App">
       <HeaderContext.Provider value={header}>
         <Header />
-        <SelectVideoTab />
+        <SelectVideoTab tab={tab} setTab={setTab} />
       </HeaderContext.Provider>
     </div>
   );
