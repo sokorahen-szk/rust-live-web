@@ -1,6 +1,6 @@
 .SelectVideoTab {
   list-style-type: none;
-  display: inline-flex;
+  display: flex;
   padding: 0;
   margin: 0;
   cursor: pointer;
@@ -13,9 +13,12 @@
   font-weight: bold;
 }
 
-.SelectVideoTab li:not(SelectVideoTab-Selected) {
+.SelectVideoTab li:not(.SelectVideoTab-Selected) {
   padding-bottom: 5px;
+  border-bottom: rgb(247, 246, 246) solid 5px;
 }
+
 .SelectVideoTab-Selected {
   border-bottom: #ddd solid 5px;
+  font-weight: bold;
 }
